@@ -5,32 +5,43 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        
-        <input type="hidden" id="status" value="<%= request.getAttribute("status")%>"/>
-        <form method="post" action="register" class="resgister-form">
-            <div>
-                <label>Nome:</label>
-                <input type="text" name="name" placeholder="your namer here"/>
+        <div class="app_content">
+            <div class="app_wrp">
+                <input type="hidden" id="status" value="<%= request.getAttribute("status")%>"/>
+                <section class="sign_container">
+                    <div class="sign_image">
+                    </div>
+                    <div class="sign_wrp">
+                        <form method="post" action="register" class="resgister-form">
+                            <div>
+                                <label>Nome:</label>
+                                <input type="text" name="name" placeholder="your namer here"/>
+                            </div>
+                            <div>
+                                <label>Email:</label>
+                                <input type="email" name="email" placeholder="your email"/>
+                            </div>
+                            <div>
+                                <label>Password:</label>
+                                <input type="password" name="password" placeholder="your password here"/>
+                            </div>
+                            <input type="submit" class="form_submit" value="Cadastrar"/>
+                        </form>
+                    </div>
+                </section>
             </div>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" placeholder="your email"/>
-            </div>
-            <div>
-                <label>Password:</label>
-                <input type="password" name="password" placeholder="your password here"/>
-            </div>
-            <input type="submit" class="form_submit" value="Cadastrar"/>
-        </form>
-        
+        </div>
         <script type="text/javascript">
                var status = document.getElementById("status").value;
                if(status == "sucess"){
                    swal("Congrats","Account Created Sucessfully","sucess");
                }
-        </script>
-        
+        </script> 
     </body>
 </html>
