@@ -22,7 +22,7 @@
                     <input type="submit" class="form_submit" value="Entrar"/>
                 </form>
                 <div class="sign-in-container">
-                    <a href="registration.jsp">Crie uma Conta</a>
+                    <a href="register.jsp">Crie uma Conta</a>
                 </div>
             </section>
         </div>
