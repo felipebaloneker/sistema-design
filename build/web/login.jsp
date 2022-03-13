@@ -19,7 +19,7 @@
                         <label>Password:</label>
                         <input type="password" name="password" placeholder="Digite sua Senha"/>
                     </div>
-                    <input type="submit" class="form_submit" value="Cadastrar"/>
+                    <input type="submit" class="form_submit" value="Entrar"/>
                 </form>
                 <div class="sign-in-container">
                     <a href="registration.jsp">Crie uma Conta</a>
