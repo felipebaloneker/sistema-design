@@ -31,7 +31,7 @@ public class Register extends HttpServlet {
            stmt.setString(2,upwd);
            stmt.setString(3,uemail);
            stmt.setString(4,"usuario");
-           dispatcher = request.getRequestDispatcher("registration.jsp");
+           dispatcher = request.getRequestDispatcher("register.jsp");
           int rowCount = stmt.executeUpdate();
           if(rowCount > 0){
               request.setAttribute("status", "sucess");
