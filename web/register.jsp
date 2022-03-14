@@ -16,6 +16,7 @@
                 <input type="hidden" id="status" value="<%= request.getAttribute("status")%>"/>
                 <section class="sign_container">
                     <div class="sign_image">
+                        <img src="${pageContext.servletContext.contextPath}/images/signin.jpg" alt="">
                     </div>
                     <div class="sign_wrp">
                         <div class="sign_header">
@@ -38,9 +39,9 @@
                                 </div>
                                 <input type="submit" class="form_submit" value="Cadastrar"/>
                             </form>
-                            <div class="sign_footer">
-                                <a href="login.jsp">Loge-se</a>
-                            </div>
+                        </div>
+                        <div class="sign_footer">
+                            <p>Já tem uma conta?<a href="login.jsp">Loge-se</a></p>
                         </div>
                     </div>
                 </section>

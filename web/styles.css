@@ -22,12 +22,13 @@
 /* Variaveis para padrões de cores, fontes e tamanhos */
 :root{
     --button-color:#AF8EFF;
+    --button-hover-color:#88A9F0;
     --header-color:#8276F4;
     --text-color-light:#fff;
     --text-color-highlight:#8276F4;
     --background-color:#fff;
     --background-color-sorla:#8276F4;
-    --signin-image:"${pageContext.request.contextPath}/images/signin.jpg";
+    --background-image:url('/SistemaDesign/images/signin.jpg')
 }
 
 
@@ -39,19 +40,22 @@
     grid-template-columns: repeat(2,1fr);
 }
 .sign_image{
-    width:100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image:var(--signin-image);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+}
+.sign_image img{
+    height:100%;
 }
 .sign_wrp{
-    padding:1rem;
+    height:100%;
     background-color:var(--background-color-sorla);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    overflow: hidden;
 }
 .sign_header{
-    height:10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,9 +68,7 @@
 .sign_header h2,p,label{
     color:var(--text-color-light)  
 }
-.sign_main form{
-    width: 100%;
-    height: 100%;
+.sign_main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,14 +97,16 @@
     transition:.2s ease;
 }
 .sign_main .form_submit:hover{
-    background-color:var(--background-color);
-    color:var(--text-color-highlight);
+    background-color:var(--button-hover-color);
 
 }
 .sign_footer{
-    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sign_footer a{
-    text-decoration:none;
-    color:var(--text-color-light)
+    text-decoration:underline;
+    color:var(--text-color-light);
+    margin:1rem;
 }

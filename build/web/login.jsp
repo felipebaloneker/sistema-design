@@ -16,7 +16,7 @@
                 <input type="hidden" id="status" value="<%= request.getAttribute("status")%>"/>
                     <section class="sign_container">
                         <div class="sign_image">
-                            <img src="<html:rewrite page='/resources/images/singin.jpg'/>" alt="">
+                            <img src="${pageContext.servletContext.contextPath}/images/signin.jpg" alt="">
                         </div>
                        <div class="sign_wrp">
                            <div class="sign_header">
@@ -37,7 +37,7 @@
                                 </form>
                            </div>
                             <div class="sign_footer">
-                                <a href="register.jsp">Crie uma Conta</a>
+                               <p>Não tem uma conta?<a href="register.jsp">Inscreva-se</a></p>
                             </div>
                        </div>
                     </section>
