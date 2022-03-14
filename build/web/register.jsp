@@ -18,21 +18,30 @@
                     <div class="sign_image">
                     </div>
                     <div class="sign_wrp">
-                        <form method="post" action="register" class="resgister-form">
-                            <div>
-                                <label>Nome:</label>
-                                <input type="text" name="name" placeholder="your namer here"/>
+                        <div class="sign_header">
+                            <h2>Cadastro</h2>
+                            <p>crie uma conta.</p>
+                        </div>
+                        <div class="sign_main">
+                            <form method="post" action="register" class="resgister-form">
+                                <div>
+                                    <label>Nome:</label>
+                                    <input type="text" name="name" placeholder="your namer here"/>
+                                </div>
+                                <div>
+                                    <label>Email:</label>
+                                    <input type="email" name="email" placeholder="your email"/>
+                                </div>
+                                <div>
+                                    <label>Password:</label>
+                                    <input type="password" name="password" placeholder="your password here"/>
+                                </div>
+                                <input type="submit" class="form_submit" value="Cadastrar"/>
+                            </form>
+                            <div class="sign_footer">
+                                <a href="login.jsp">Loge-se</a>
                             </div>
-                            <div>
-                                <label>Email:</label>
-                                <input type="email" name="email" placeholder="your email"/>
-                            </div>
-                            <div>
-                                <label>Password:</label>
-                                <input type="password" name="password" placeholder="your password here"/>
-                            </div>
-                            <input type="submit" class="form_submit" value="Cadastrar"/>
-                        </form>
+                        </div>
                     </div>
                 </section>
             </div>

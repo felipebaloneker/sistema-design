@@ -27,7 +27,7 @@
     --text-color-highlight:#8276F4;
     --background-color:#fff;
     --background-color-sorla:#8276F4;
-    --signin-image:"<c:url value='/images/signin.jpg'/>";
+    --signin-image:"${pageContext.request.contextPath}/images/signin.jpg";
 }
 
 
