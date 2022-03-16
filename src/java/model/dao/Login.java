@@ -35,6 +35,9 @@ public class Login extends HttpServlet {
               ResultSet rs = stmt.executeQuery();
               if(rs.next()){
                   session.setAttribute("name",rs.getString("uname"));
+                  session.setAttribute("id", rs.getString("id"));
+                  session.setAttribute("email", rs.getString("uemail"));
+                  session.setAttribute("type",rs.getString("utype"));
                   dispatcher = request.getRequestDispatcher("index.jsp");
               }
               else{

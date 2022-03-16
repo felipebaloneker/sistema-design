@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Design Login</title>
+        <title>ArthX - login</title>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
