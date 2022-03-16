@@ -1,37 +1,3 @@
-/* Padrões */
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Lato', sans-serif;
-}
-.app_content{
-    width:100vw;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.app_wrp{
-    width:100%;
-    height:100%;
-    max-width: 1280px;
-    overflow-x: hidden;
-}
-
-/* Variaveis para padrões de cores, fontes e tamanhos */
-:root{
-    --button-color:#AF8EFF;
-    --button-hover-color:#88A9F0;
-    --header-color:#8276F4;
-    --text-color-light:#fff;
-    --text-color-highlight:#8276F4;
-    --background-color:#fff;
-    --background-color-sorla:#8276F4;
-    --background-image:url('/SistemaDesign/images/signin.jpg')
-}
-
-
 /* Tela de Login e Cadastro */
 .sign_container{
     width: 100%;

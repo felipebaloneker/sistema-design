@@ -9,10 +9,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ArthX</title>
+        <title>WinDesign</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/global.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
@@ -23,16 +24,13 @@
            <div class="app_wrp">
                 <header class="header">
                     <div class="log_wrp">
+                        <h2><span>Win</span>Design</h2>
                     </div>
                     <div class="menu_wrp">
-                        <nav class="menu">
-                            <ul>
-                                <li><a><%=session.getAttribute("name")%></a></li>
-                                <li><a><%=session.getAttribute("email")%></a></li>
-                                <li><a><%=session.getAttribute("type")%></a></li>
-                                <li><a><%=session.getAttribute("id")%></a></li>
-                            </ul>
-                        </nav>
+                        <div class="user_menu">
+                            <div class="user_avatar"><%=session.getAttribute("name")%></div>
+                            <div class="user_name"><%=session.getAttribute("name")%></div>
+                        </div>
                     </div>
                 </header>
                 <main class="main">
